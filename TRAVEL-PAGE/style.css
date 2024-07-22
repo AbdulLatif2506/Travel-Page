@@ -1,0 +1,168 @@
+#hero {
+  height: 700px;
+  background-image: url(images/places/ocean.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#hero-content {
+  width: 90%;
+  max-width: 900px;
+  background-color: rgba(51, 47, 47, 0.8);
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 0;
+  position: relative;
+  top: 200px;
+}
+
+#hero-content h1 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#hero-content p {
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+#hero-content a {
+  background-color: rgb(255, 251, 0);
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#hero-content a:hover {
+  background-color: rgb(255, 243, 0);
+}
+
+#destinations {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#highlight {
+  padding: 24px;
+  background: linear-gradient(45deg, rgb(225, 255, 253), rgb(180, 228, 221));
+}
+
+#highlight h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(59, 65, 64);
+  font-size: 2rem;
+  margin: 24px 0;
+}
+
+.destination p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(124, 123, 124);
+  margin: 20px;
+}
+
+.destination strong {
+  color: rgb(0, 160, 117);
+}
+
+.destination {
+  margin: 0 15px;
+  flex: 1 1 calc(33.333% - 30px);
+  box-sizing: border-box;
+}
+
+.destination img {
+  height: 200px;
+  width: 100%;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  #hero {
+    height: 500px;
+  }
+
+  #hero-content {
+    width: 90%;
+    padding: 30px 0;
+    top: 100px;
+  }
+
+  #hero-content h1 {
+    font-size: 2rem;
+  }
+
+  #hero-content p {
+    font-size: 1.2rem;
+  }
+
+  #hero-content a {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+
+  #destinations {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .destination {
+    flex: 1 1 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero {
+    height: 400px;
+  }
+
+  #hero-content {
+    padding: 20px 0;
+    top: 50px;
+  }
+
+  #hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  #hero-content p {
+    font-size: 1rem;
+  }
+
+  #hero-content a {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  #highlight h2 {
+    font-size: 1.5rem;
+  }
+
+  .destination p {
+    font-size: 1.2rem;
+  }
+}
